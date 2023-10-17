@@ -1,10 +1,12 @@
+from requests import Session
+
 class JournalAPI:
 
     url = 'https://msapi.top-academy.ru/api/v2/' # URL для API колледжа
     app_id = '6a56a5df2667e65aab73ce76d1dd737f7d1faef9c52e8b8c55ac75f565d8e8a6' # Обращение к сайту по appid
 
     def __init__(self, username, password):
-        from requests import Session
+
         self.user = None
         self.all_homeworks = []
         self.username = username
